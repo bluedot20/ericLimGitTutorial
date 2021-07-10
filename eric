@@ -1,0 +1,115 @@
+
+# # # sum of all digits 
+# # number = 54321
+
+# # digit = number % 10 
+# # # print(digit)
+# # answer = 0 
+# # answer = answer + digit 
+# # print(answer)
+# # number = number // 10 
+
+# # digit = number % 10 
+# # answer = answer + digit 
+# # print(answer)
+
+# # def sumOfAllDigits(number): 
+# # 	# number = 54321
+
+# # 	while n > 0: 
+# # 		answer = 0 
+# # 		number % 10 
+
+
+# def sumOfAllDigits(number): 
+# 	answer = 0
+# 	while number > 0: 	 
+# 		digit = number % 10 
+# 		answer = answer + digit 
+# 		number = number // 10 
+# 	return answer 
+
+# print(sumOfAllDigits(54321))
+
+
+# # x = 10 
+# # x = x + 10 
+# # print(x)
+
+def digitCount(number): 
+	count = 0
+	while number > 0: 	 
+		number = number // 10 
+		count = count + 1 
+	return count 
+
+# print(digitCount(91))
+
+
+def digitCountForLoop(number): 
+	count = 0
+	for i in range(0, number): 	 
+		number = number // 10 
+		count = count + 1 
+		if number <= 0: 
+			 break
+	return count 
+
+# print(digitCountForLoop(312))
+
+
+
+# def digitCount2(n): 
+# 	count = 0 
+# 	for i in range(0,n): 
+# 		n = n // 10
+# 		count = count + 1 
+# 	return count 
+
+# print(digitCount2(123))
+
+
+def reverseDigit(number): 
+	digitCount = 0 
+	copyNum = number 
+	while copyNum > 0: 
+		copyNum = copyNum // 10 
+		digitCount = digitCount + 1 
+	answer = 0 
+	while number > 0: 
+		digit = number % 10
+		number = number // 10 
+		answer = answer + digit * 10 ** (digitCount - 1)
+		digitCount = digitCount - 1 
+	return answer 
+
+print(reverseDigit(12345))
+
+
+def oppositeNum(n):
+	answer = 0 
+	while (n > 0): 
+		digit = n % 10 
+		answer = answer * 10 + digit 
+		n = n // 10 
+	return answer 
+
+print(oppositeNum(123))
+
+
+
+
+
+
+
+for i in range(0, 11, 2): 
+	print(i)
+
+
+
+
+
+
+
+
+
